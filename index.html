@@ -14,6 +14,7 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/custom.css">
 	<script src="scripts/vendor/modernizr-2.6.2.min.js"></script>
 </head>
@@ -22,7 +23,28 @@
 	<!--[if lt IE 7]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
+	<div class="container-fluid">
 
+		<header class="col-xs-12">
+			<h1>#nowplaying in San Francisco</h1>
+			<p>This page shows #nowplaying tweets in San Francisco that contain a youtube link. It also allows you to post a #nowplaying tweet with a YouTube link.</p>
+		</header>
+		<section class="panel panel-default col-xs-12">
+			<form class="form-inline panel-body text-center">
+				<div class="form-group">
+					<label for="url">Video URL:</label>
+					<input type="text" class="form-control" name="url" id="url">
+				</div>
+				<div class="form-group">
+					<label for="url">Comment:</label>
+					<input type="text" class="form-control" name="url" id="url">
+				</div>
+					<button type="submit" class="btn btn-twitter form-group">
+						<i class="fa fa-twitter"></i> Tweet to #nowplaying
+					</button>
+			</form>
+		</section>
+	</div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script>

@@ -1,2 +1,36 @@
 @import 'vendor/3l';
 
+// Variables
+@breakpoint-sm: 768px;
+
+// Color palette
+@twitter-blue: #3498DB;
+
+// Buttons
+.btn-twitter {
+	color: #fff;
+	background-color: @twitter-blue;
+	border-color: @twitter-blue;
+}
+
+// Forms
+.form-inline {
+	.form-group {
+		margin-bottom: 1em;
+	}
+}
+
+// Responsive
+@media (min-width: @breakpoint-sm) {
+	.form-inline {
+		.form-group {
+			margin: 0 0.5em 1em;
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
