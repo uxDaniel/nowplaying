@@ -25,40 +25,73 @@
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 	<div class="container-fluid">
-
-		<header class="col-xs-10">
-			<h1>#nowplaying in San Francisco</h1>
-			<p>This page shows #nowplaying tweets in San Francisco that contain a youtube link. It also allows you to post a #nowplaying tweet with a YouTube link.</p>
+		<header class="row">
+			<div class="col-xs-12">
+				<h1 class="">#nowplaying in San Francisco</h1>
+				<p>This page shows #nowplaying tweets in San Francisco that contain a youtube link. It also allows you to post a #nowplaying tweet with a YouTube link.</p>
+			</div>
 		</header>
-		<section class="col-xs-12">
-			<div class="panel panel-default">
-				<form class="form-inline panel-body text-center" method="post" action="api/sendtweet.php">
-					<div class="form-group">
-						<label for="url">Video URL:</label>
-						<input type="text" class="form-control" name="url" id="url">
-					</div>
-					<div class="form-group">
-						<label for="comment">Comment:</label>
-						<input type="text" class="form-control" name="comment" id="comment">
-					</div>
-					<button type="submit" class="btn btn-twitter form-group">
-						<i class="fa fa-twitter"></i> Tweet to #nowplaying
-					</button>
-				</form>
+		
+		<section class="row">
+			<div class="col-xs-12">
+				<div class="panel panel-default">
+					<form class="form-inline panel-body text-center" method="post" action="api/sendtweet.php">
+						<div class="form-group">
+							<label for="url">Video URL:</label>
+							<input type="text" class="form-control" name="url" id="url">
+						</div>
+						<div class="form-group">
+							<label for="comment">Comment:</label>
+							<input type="text" class="form-control" name="comment" id="comment">
+						</div>
+						<button type="submit" class="btn btn-twitter form-group">
+							<i class="fa fa-twitter"></i> Tweet to #nowplaying
+						</button>
+					</form>
+				</div>
 			</div>
 		</section>
 
-		<section class="col-xs-10">
-			<article class="panel panel-primary">
-				<header class="panel-heading">
-					<h2 class="panel-title">Led Zeppelin - Immigrant Song (Live Video)</h2>
-				</header>
-				<div class="panel-body">
-					<div class="col-xs-6">
-						<div class="lazyYT" data-youtube-id="RlNhD0oS5pk" data-ratio="16:9"></div>
-					</div>
-				</div>
-			</article>
+		<section class="row">
+			<div class="col-xs-12">
+				<article class="panel panel-primary tweet">
+					<header class="panel-heading">
+						<h2 class="panel-title">Led Zeppelin - Immigrant Song (Live Video)</h2>
+					</header>
+					<section class="panel-body">
+						<figure class="col-xs-12 col-sm-5">
+							<div class="lazyYT" data-youtube-id="RlNhD0oS5pk" data-ratio="4:3"></div>
+						</figure>
+						<div class="col-xs-12 col-sm-7">
+							<div class="row header">
+								<div class="col-xs-9">
+									<img src="http://placehold.it/75x75" class="img-circle pull-left avatar">
+									<h3>John Doe</h3>
+									<h4>@johndoe</h4>
+								</div>
+								<div class="col-xs-3 text-right">
+									<a class="btn btn-twitter btn-xs pull"><i class="fa fa-twitter"></i> Follow</a>
+								</div>
+							</div>
+							<div class="row body">
+								<div class="col-xs-12">
+									<p>I love this song and band so much! http://youtu.be/DfgkAJmp9-A Can't wait to see them live. Listen! #nowplaying</p>
+								</div>
+							</div>
+							<div class="row footer">
+								<div class="col-xs-4">
+									<a class="btn btn-xs btn-link text-muted">3 hours ago</a>
+								</div>
+								<div class="col-xs-8 text-right">
+									<a class="btn btn-xs btn-link"><i class="fa fa-reply"></i> Reply</a>
+									<a class="btn btn-xs btn-link"><i class="fa fa-retweet"></i> Retweet</a>
+									<a class="btn btn-xs btn-link"><i class="fa fa-star"></i> Favorite</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
 		</section>
 	</div>
 

@@ -18,6 +18,32 @@
 	.form-group {
 		margin-bottom: 1em;
 	}
+	padding-bottom: 2px;
+}
+
+// Tweets
+.tweet {
+	.header {
+		line-height: 75px;
+		.avatar {
+			margin-right: 1em;
+		}
+		h3, h4 {
+			line-height: 1;
+		}
+		h3 {
+			margin: 15px 0 0;
+			font-weight: bold;
+		}
+		h4 {
+			margin: 0;
+		}
+	}
+	.body {
+		margin-top: 1em;
+		font-size: 20px;
+		margin-bottom: 1em;
+	}
 }
 
 // Responsive
@@ -33,4 +59,12 @@
 			}
 		}
 	}
+}
+@media screen and (max-width: @breakpoint-sm) {
+	.tweet {
+		.header {
+			margin-top: 1em;
+		}
+	}
+
 }
